@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    
+    <title>Student Mapping At Right Track</title>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Signika:300,400,600,700" />
+    <link rel="stylesheet" type="text/css" href="assets/libs/font-awesome/css/font-awesome.css" /> 
+    <link rel="stylesheet" type="text/css" href="assets/libs/no-ui-slider/jquery.nouislider.css" />
+    <link rel="stylesheet" type="text/css" href="assets/libs/animate.css" /> 
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <div id="loader">
+
+        <div class="loader-spinner">
+        </div>
+    
+    </div>
+                 
+    <div id="contact-popup">
+    
+        <div id="contact-popup-background">
+        </div>
+    
+        <div id="contact-popup-content" class="animated speed">
+
+            <div id="contact-popup-close"><i class="fa fa-times"></i></div>
+
+            <div id="google-map" data-lat="37.42565" data-lng="-122.13535" data-zoom-level="12">
+            </div>
+            
+            <div class="padding">
+
+                <i class="fa fa-envelope-o background-icon"></i>
+                
+                <h3>Contact us</h3>
+                <h3 class="right">(+123) 456 789 000</h3>
+                
+                <h2>Send us an <span>email!</span></h2>
+                <form method="post" class="form">
+                
+                    <h4>Contact details:</h4>
+                    <input type="text" name="Name" placeholder="Your name..." class="contact-form-element contact-form-client-name" />
+                    <input type="text" name="Phone number" placeholder="Your phone number..." class="contact-form-element last" />
+                    <input type="text" name="E-mail" placeholder="Your e-mail..." class="contact-form-element contact-form-client-email" />
+                    <input type="text" name="Title" placeholder="E-mail title..." class="contact-form-element contact-form-client-message-title last" />
+                    
+                    <h4>Message:</h4>
+                    <textarea name="Message" rows="5" cols="5" placeholder="Your message..." class="contact-form-element"></textarea>
+                    <button class="button button-navy-blue send-contact" type="button">Send a message! <i class="fa fa-paper-plane-o"></i></button>      
+                             
+                    <div class="contact-form-thanks">
+                            
+                        <div class="contact-form-thanks-content">
+                        
+                            Your message has been sent successfully. 
+                            <span class="contact-form-thanks-close">Close this notice.</span>
+                        
+                        </div>
+                    
+                    </div>         
+                                                                         
+                </form>
+            
+            </div>
+        
+        </div>
+    
+    </div>  
+
+    <div id="quote-popup">
+    
+        <div id="quote-popup-background">
+        </div>
+    
+        <div id="quote-popup-content" class="animated speed">
+        
+            <div id="quote-popup-close"><i class="fa fa-times"></i></div>
+            
+            <ul id="quote-popup-tabs">
+            
+                <li data-quote-tab-for="travel-insurance">Software Developmentand Software Testing </li>
+                <li data-quote-tab-for="house-insurance">product design and analyst jobs</li>
+            
+            </ul>
+
+            <div class="quote-forms">
+
+                <!--
+                travel insurance
+                -->
+                <div class="quote-form" data-quote-form-for="travel-insurance">
+                
+                    <i class="fa fa-bus background-icon"></i>
+                
+                    <div class="quote-form-background" style="background-image: url( 'assets/img/image.png' );">
+                    </div>
+                    
+                    <div class="quote-form-content">
+
+                        <h2>software Engineer</h2>
+                        <div class="form">
+
+                            <h4>Expected Salary for a month <span class="slider-value quote-form-element" data-name="Level of protection" data-slider-id="travel-protection-level">Rs<span></span> 0thousand </span></h4>
+                            <div class="slider" data-slider-min="10000" data-slider-max="1000000" data-slider-start="200000" data-slider-step="10000" data-slider-id="travel-protection-level"></div>
+
+                            <h4>Contact details:</h4>
+                            <input type="text" class="quote-form-element quote-form-client-name" name="Full name" placeholder="Full Name..." />
+                            
+                            <span class="custom-dropdown last">
+                            
+                                <select name="Work Experience?" class="custom-dropdown-select quote-form-element">
+                                
+                                    <option value="-">How many persons?</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                
+                                </select>
+                            
+                            </span>
+                            
+                            <input type="text" name="Phone Number" placeholder="Phone Number..." class="quote-form-element" />
+                            <input type="text" name="E-mail Address" placeholder="E-mail Address..." class="quote-form-element quote-form-client-email last" />
+                            
+                            <h4>Travel:</h4>
+                            <input type="text" name="Destination" placeholder="ur location name..." class="quote-form-element" />
+                            
+                            <span class="custom-dropdown last">
+                                
+                                <select name="How long?" class="custom-dropdown-select quote-form-element">
+
+                                    <option value="-">travelling distance</option>
+                                    <option value="10km">10kms</option>
+                                    <option value="5km">5km</option>
+                                    <option value="3km">3km</option>
+                                    <option value="1km">1km</option>
+
+                                </select>
+
+                            </span>
+
+                            <button class="button button-navy-blue send-quote" type="button">Contact us <i class="fa fa-paper-plane-o"></i></button>
+                            
+                            <div class="quote-form-thanks">
+                            
+                                <div class="quote-form-thanks-content">
+                                
+                                  Your detials has been sent successfully received.We will revert back to asap , kindly be ready with your resume . 
+                                    <span class="quote-form-thanks-close">Close this notice.</span>
+                                
+                                </div>
+                            
+                            </div>
+                        
+                        </div>
+
+                    </div>
+                
+                </div>
+                <!--
+                house insurance
+                -->
+                <div class="quote-form" data-quote-form-for="house-insurance">
+                
+                    <i class="fa fa-television background-icon"></i>
+                
+                    <div class="quote-form-background" style="background-image: url( 'assets/img/image.png' );">
+                    </div>
+                    
+                    <div class="quote-form-content">
+
+                        <h2>Other jobs <span>Detials</span></h2>
+                        <div class="form">
+                        
+                            <h4>Your house:</h4>
+                            <span class="custom-dropdown">
+                            
+                                <select name="What sort of property is it?" class="custom-dropdown-select quote-form-element">
+                                
+                                    <option value="-">jobs</option>
+                                    <option value="House">Desinger</option>
+                                    <option value="Flat / Apartment">Analyst</option>
+                                    <option value="Bungalow">Tester</option>
+                                    <option value="Town house">product designer</option>
+                                    <option value="Other">Web developer</option>
+                                
+                                </select>
+                            
+                            </span>
+                            
+                            <span class="custom-dropdown last">
+                            
+                                <select name="What type of property is it?" class="custom-dropdown-select quote-form-element">
+                                
+                                    <option value="-">Current job role position ?</option>
+                                    <option value="Semi-detached">manager</option>
+                                    <option value="Detached">developer</option>
+                                    <option value="Link-detached">archetecht</option>
+                                    <option value="Terraced">Vp</option>
+                                    <option value="End terrace">jr developer or tester</option>
+                                
+                                </select>
+                            
+                            </span>
+                            
+                            <input type="text" class="quote-form-element" name="Roughly when was it built?" placeholder="No of months or years of experience?" />
+                            <input type="text" class="quote-form-element last" name="House Postcode" placeholder="House Pincode" />
+                        
+                            <h4>Contact details:</h4>
+                            <input type="text" class="quote-form-element quote-form-client-name" name="Full name" placeholder="Full Name..." />
+                            
+                            <span class="custom-dropdown last">
+                            
+                                <select name="Age" class="custom-dropdown-select quote-form-element">
+                                
+                                    <option value="-">Your age</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                    <option value="32">32</option>
+                                    <option value="33">33</option>
+                                    <option value="34">34</option>
+                                    <option value="35">35</option>
+                                    <option value="36">36</option>
+                                    <option value="37">37</option>
+                                    <option value="38">38</option>
+                                    <option value="39">39</option>
+                                    <option value="40">40</option>
+                                    <option value="41">41</option>
+                                    <option value="42">42</option>
+                                    <option value="43">43</option>
+                                    <option value="44">44</option>
+                                    <option value="45">45</option>
+                                    <option value="46">46</option>
+                                    <option value="47">47</option>
+                                    <option value="48">48</option>
+                                    <option value="49">49</option>
+                                    <option value="50">50</option>
+                                    <option value="51">51</option>
+                                    <option value="52">52</option>
+                                    <option value="53">53</option>
+                                    <option value="54">54</option>
+                                    <option value="55">55</option>
+                                    <option value="56">56</option>
+                                    <option value="57">57</option>
+                                    <option value="58">58</option>
+                                    <option value="59">59</option>
+                                    <option value="60">60</option>
+                                    <option value="61">61</option>
+                                    <option value="62">62</option>
+                                    <option value="63">63</option>
+                                    <option value="64">64</option>
+                                    <option value="65">65</option>
+                                    <option value="66">66</option>
+                                    <option value="67">67</option>
+                                    <option value="68">68</option>
+                                    <option value="69">69</option>
+                                    <option value="70">70</option>
+                                    <option value="71">71</option>
+                                    <option value="72">72</option>
+                                    <option value="73">73</option>
+                                    <option value="74">74</option>
+                                    <option value="75">75</option>
+                                    <option value="76">76</option>
+                                    <option value="77">77</option>
+                                    <option value="78">78</option>
+                                    <option value="79">79</option>
+                                    <option value="80">80</option>
+                                    <option value="81">81</option>
+                                    <option value="82">82</option>
+                                    <option value="83">83</option>
+                                    <option value="84">84</option>
+                                    <option value="85">85</option>
+                                    <option value="86">86</option>
+                                    <option value="87">87</option>
+                                    <option value="88">88</option>
+                                    <option value="89">89</option>
+                                    <option value="90">90</option>
+                                    <option value="91">91</option>
+                                    <option value="92">92</option>
+                                    <option value="93">93</option>
+                                    <option value="94">94</option>
+                                    <option value="95">95</option>
+                                    <option value="96">96</option>
+                                    <option value="97">97</option>
+                                    <option value="98">98</option>
+                                    <option value="99">99</option>
+                                
+                                </select>
+                            
+                            </span>
+                            
+                            <input type="text" name="Phone Number" placeholder="Phone Number..." class="quote-form-element" />
+                            <input type="text" name="E-mail Address" placeholder="E-mail Address..." class="quote-form-element quote-form-client-email last" />
+                        
+                            <button class="button button-navy-blue send-quote" type="button">Contact us  <i class="fa fa-paper-plane-o"></i></button>
+                        
+                            <div class="quote-form-thanks">
+                            
+                                <div class="quote-form-thanks-content">
+                                
+                                    Your detials has been sent successfully received.We will revert back to asap , kindly be ready with your resume . 
+                                    <span class="quote-form-thanks-close">Close this notice.</span>
+                                
+                                </div>
+                            
+                            </div>
+                        
+                        </div>
+
+                    </div>
+                
+                </div>
+            
+            </div>
+        
+        </div>
+    
+    </div>
+
+    <header>
+    
+        <div class="center">
+
+            <div class="logo">
+            
+                <h3  style="color:white;font-size:20px;">Student Mapping At Right Track</h3>
+            
+            </div>
+
+            <nav>
+            
+                <ul class="menu">
+                
+                    <li class="active selected "><a href="index.html">Home</a></li>
+                    <li><button class="menu-element" data-action="show-quote-popup" data-quote-key="life-insurance">Career Asistance </button></li>
+                    
+                    
+                    <li><button class="menu-element" data-action="show-contact-popup">Contact</button></li>
+    
+                </ul>
+                
+                <div class="menu-responsive"><i class="fa fa-bars"></i></div>
+            
+            </nav>
+            
+            <div class="clear">
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="heading">
+    
+        <div class="heading-slides">
+        
+            <div class="heading-slide-single" data-slide-id="1" style="background-image: url( 'assets/img/Career-Banner.png' );">
+            
+                <div class="flying-1">
+                
+                    <span> Job Consultancy </span>
+                
+                </div>
+                
+                <div class="flying-2">
+                
+                    <h3>Looking for a job !</h3>
+                    <p>Kindly send your resume.</p>
+                    
+                    <button class="button button-white" data-action="show-quote-popup" data-quote-key="life-insurance">Get a quote <i class="fa fa-paper-plane-o"></i></button>
+                
+                </div>
+                
+                <div class="heading-content">
+                    
+                    <h2> Jobs Asistance?</h2>
+                    <h3>Are you looking for Jobs? We can help you out!</h3>
+                    
+                    <button class="button button-navy-blue" data-action="show-quote-popup" data-quote-key="life-insurance">Get a quote <i class="fa fa-paper-plane-o"></i></button>
+        
+                </div>
+            
+            </div>
+            
+            <div class="heading-slide-single" data-slide-id="2" style="background-image: url( 'assets/img/employment.jpg );">
+            
+                <div class="flying-1">
+                
+                    <span>Consultancy</span>
+                
+                </div>
+                
+                <div class="flying-2">
+                
+                    <h3>Resume Building </h3>
+                    <p>Do want to learn how to make a resume </p>
+                    
+                    <button class="button button-white" data-action="show-quote-popup" data-quote-key="life-insurance">Get a quote <i class="fa fa-paper-plane-o"></i></button>
+                
+                </div>
+                
+                <div class="heading-content">
+                    
+                    <h2>Our Vision</h2>
+                    <h3>Is to help students to get rightful jobs</h3>
+                    
+                    <button class="button button-navy-blue" data-action="show-quote-popup" data-quote-key="life-insurance">Get a quote <i class="fa fa-paper-plane-o"></i></button>
+        
+                </div>
+            
+            </div>
+        
+        </div>
+
+    </div>
+    
+    <section class="call-to-action background">
+    
+        <div class="center">
+
+            <div class="left">
+            
+                <h2>Are you  looking for a job ?</h2>
+                <p>Are you fresher or experienced  canditate who is looking for a job in a MNC or start-ups.If you need a career asistance from us,Kindly share your mobile number with us.
+                </p>
+                
+                <div class="form">
+            
+                    <div class="call-to-action-thanks">
+                    
+                        <div class="call-to-action-thanks-content">
+                        
+                            Thank you, we'll call you soon.
+                            <span class="call-to-action-thanks-close">Close this notice.</span>
+                        
+                        </div>
+                    
+                    </div>
+            
+                    <input type="text" name="Phone number" placeholder="Your phone number..." class="phone-number" />
+                    <button class="button button-navy-blue send-phone-call-quote">Get a phone call <i class="fa fa-phone"></i></button>
+                
+                </div>
+                    
+            </div>
+        
+            <div class="right">
+            
+                <div class="circles">
+
+                    <div class="circle-1 circle-pulse">
+                    </div>
+                    
+                    <div class="circle-2 circle-pulse">
+                    </div>
+                    
+                    <div class="circle-3 circle-pulse">
+                    </div>
+                    
+                    <div class="circle-4 circle-pulse">
+                    </div>
+                    
+                    <a href="tel:+919632510980">
+                    
+                        <div class="circle-center">
+                        
+                            <div class="circle-center-tip">Call us: <strong>(+91) 9632510980</strong></div>
+                            <i class="fa fa-phone"></i>
+                        
+                        </div>
+                    
+                    </a>
+                
+                </div>
+            
+            </div>
+            
+            <div class="clear">
+            </div>
+
+        </div>
+    
+    </section>
+    
+    <section class="insurances-slider section-gray">
+    
+        <div class="center">
+        
+            <div class="green-line">
+            </div>
+            
+            <div class="images">
+            
+                <div class="image" style="background-image: url( 'assets/img/job-search.jpg' );" data-insurance-key="house">
+                </div>
+                
+                <div class="image" style="background-image: url( 'assets/img/job-search.jpg' );" data-insurance-key="travel">
+                </div>
+                
+                <div class="image" style="background-image: url( 'assets/img/job-search.jpg' );" data-insurance-key="life">
+                </div>
+
+                <div class="image" style="background-image: url( 'assets/img/job-search.jpg' );" data-insurance-key="car">
+                </div>
+            
+            </div>
+        
+            <div class="content">
+
+                <div class="descriptions">
+
+                    <div class="description" data-insurance-key="house">
+                    
+                        <h3>Job Opputunities for Technical Students </h3>
+                        <h2>Software Engineer </h2>
+                        
+                        <p> A software engineer is a licensed professional engineer who is schooled and skilled in the application of engineering discipline to the creation of software. A software engineer is often confused with a programmer, but the two are vastly different disciplines.</p>
+                        <button class="button button-navy-blue" data-action="show-quote-popup" data-quote-key="house-insurance">Get a quote <i class="fa fa-paper-plane-o"></i></button>
+                    
+                    </div>
+                    
+                    <div class="description" data-insurance-key="travel">
+                    
+                        <h3>Job Opputunities for Technical Students </h3>
+                        <h2>Software Tester </h2>
+                        
+                        <p>Software testing is an investigation conducted to provide stakeholders with information about the quality of the product or service under test. Software testing can also provide an objective, independent view of the software to allow the business to appreciate and understand the risks of software implementation.</p>
+                        <button class="button button-navy-blue" data-action="show-quote-popup" data-quote-key="travel-insurance">Get a quote <i class="fa fa-paper-plane-o"></i></button>
+                    
+                    </div>
+                    
+                    <div class="description" data-insurance-key="life">
+                    
+                        <h3>Job Opputunities for Technical Students </h3>
+                        <h2> product Designer</h2>
+                        
+                        <p>Product design is the process of creating new products and items from scratch or working on improvements to existing ones. Items can include everything from electronics, domestic appliances and machinery to company brands and web apps.</p>
+                        <button class="button button-navy-blue" data-action="show-quote-popup" data-quote-key="life-insurance">Get a quote <i class="fa fa-paper-plane-o"></i></button>
+                    
+                    </div>
+
+                    <div class="description" data-insurance-key="car">
+                    
+                        <h3>Job Opputunities for Technical Students </h3>
+                        <h2>Analyst</h2>
+                        
+                        <p>An analyst is an individual who performs analysis of a topic. The term may refer to one of the following professions. kindly want to know about analyst <a href="https://en.wikipedia.org/wiki/Analyst">Click here</a></p>
+                        <button class="button button-navy-blue" data-action="show-quote-popup" data-quote-key="car-insurance">Get a quote <i class="fa fa-paper-plane-o"></i></button>
+                    
+                    </div>
+
+                </div>
+                
+                <ul class="tabs">
+                
+                    <li class="active" data-insurance-key="house">
+                    
+                        <i class="fa fa-television "></i>
+                        <span>Software Engineer</span>
+                    
+                    </li>
+                    
+                    <li data-insurance-key="travel">
+                    
+                        <i class="fa fa-desktop"></i>
+                        <span>Software tester</span>
+                    
+                    </li>
+                    
+                    <li data-insurance-key="life">
+                    
+                        <i class="fa fa-product-hunt"></i>
+                        <span>product design</span>
+                    
+                    </li>
+                    
+                    <li data-insurance-key="car">
+                    
+                        <i class="fa fa-bar-chart"></i>
+                        <span>Analyst</span>
+                    
+                    </li>
+
+                </ul>
+            
+            </div>
+            
+            <div class="clear">
+            </div>
+        
+        </div>
+    
+    </section>
+
+    <section class="about-us">
+    
+        <div class="center">
+        
+            <div class="green-line">
+            </div>
+        
+            <div class="left">
+            
+                <h3>About us</h3>
+                <h2>Meet Our Job Agency In Bangalore.</h2>
+                
+                <p>We are non-profit organisation who wants to help students get placed in a company.</p>
+
+                <div class="timeline">
+                
+                    <div class="timeline-element">
+                    
+                        <span class="date">November, 2015</span>
+                        <p>The establishment of our agency, with two  professional HR Employess from  a MNC,in a small office.</p>
+                    
+                    </div>
+                    
+                    <div class="timeline-element">
+                    
+                        <span class="date">December, 2015</span>
+                        <p>Three new Hr professional joined  in our team, 100 students got placed in Technical Field!</p>
+                    
+                    </div>
+                    
+                    <div class="timeline-element">
+                    
+                        <span class="date">January, 2016</span>
+                        <p>Moving to a new office in Bangalore. Looking forward for More than 500 students, great references and great view of the future!</p>
+                    
+                    </div>
+                
+                </div>
+
+            </div>
+        
+            <div class="right">
+            
+                <div class="images-slider">
+                
+                    <div class="images-slider-change">
+                    
+                        <div class="images-slider-prev"><i class="fa fa-angle-left"></i></div>
+                        <div class="images-slider-next"><i class="fa fa-angle-right"></i></div>
+                    
+                    </div>
+                
+                    <div class="images-slider-single" style="background-image: url( 'assets/img/corporate.jpg' );">
+                    </div>
+                    
+                    <div class="images-slider-single" style="background-image: url( 'assets/img/image4.png' );">
+                    </div>
+                
+                </div>
+                
+            </div>
+            
+            <div class="clear">
+            </div>
+        
+        </div>
+    
+    </section>
+
+    <section class="slogan section-gray-top">
+    
+        <div class="center">
+        
+            <i class="fa fa-bar-chart-o background-icon"></i>
+
+            <div class="left">
+            
+                <h3>Our vision</h3>
+                <h2>To Help The Students To get Placed.</h2>
+                
+                <blockquote>
+                
+                    <p>I'm really happy that i got placed in a MNC Company. </p>
+                    <cite>John Doe</cite>
+                
+                </blockquote>
+            
+            </div>
+            
+            <div class="right">
+            
+                <div class="key-number-values">
+                    
+                    <div class="single single-top single-left">
+                    
+                        <span class="number">129</span>
+                        <span class="description">satisfied students</span>
+                    
+                    </div>
+                    
+                    <div class="single single-top single-right">
+                    
+                        <span class="number">5</span>
+                        <span class="description">professional Hr</span>
+                    
+                    </div>
+                    
+                    <div class="single single-bottom single-left">
+                    
+                        <span class="number">2</span>
+                        <span class="description">Trainers</span>
+                    
+                    </div>
+                    
+                    <div class="single single-bottom single-right">
+                    
+                        <span class="number">150</span>
+                        <span class="description">Number of Companies</span>
+                    
+                    </div>
+                
+                </div>
+            
+            </div>
+            
+            <div class="clear">
+            </div>
+        
+        </div>
+    
+    </section>
+    
+    <section class="image-slogan with-parallax" style="background-image: url( 'assets/_img/employment.jpg' );">
+    
+        <div class="flying-1">
+        
+            <span>Training</span>
+        
+        </div>
+        
+        <div class="flying-2">
+        
+            <h3>Looking  for a Help!</h3>
+            <p>We are happy to be your placement assistance.</p>
+
+            <button class="button button-white" data-action="show-quote-popup" data-quote-key="life-insurance">Get a quote <i class="fa fa-paper-plane-o"></i></button>
+        
+        </div>
+    
+    </section>
+
+    <section class="contact section-gray">
+    
+        <div class="center">
+        
+            <i class="fa fa-envelope-o background-icon"></i>
+            <div class="contact-details">
+
+                <div class="contact-detail-single">
+                
+                    <h3><i class="fa fa-map-marker"></i> Company informations</h3>
+                    <p><strong>Student Mapping at Right track</strong><br /> Sujil Anto</p>
+                    <p class="without-margin-bottom">Dairy circle <br /> Bangalore ,560076</p>
+                     
+                </div>
+
+                <div class="contact-detail-single">
+                
+                    <h3><i class="fa fa-envelope-o"></i> Contact details</h3>
+                    <p>E-mail address: <br /><a href="#">sujilnt@gmail.com</a></p>     
+                    <p class="without-margin-bottom"><button class="button button-navy-blue" data-action="show-contact-popup">Contact us! <i class="fa fa-paper-plane-o"></i></button></p>
+                
+                </div>
+                
+                <div class="contact-detail-single contact-detail-single-last">
+                
+                    <h2>+91-9632510980</h2> 
+                    <p class="without-margin-bottom">Available 8:00am - 4:00pm</p> 
+                
+                </div>
+            
+            </div>
+
+        </div>
+    
+    </section>
+
+    <footer>
+
+        <div class="center">
+
+            <div class="green-line">
+            </div>
+        
+            <nav>
+        
+                <ul class="left">
+                    
+                    <li>
+                    
+                        <h4>Find us!</h4>
+                        <ul class="sub">
+                        
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Google+</a></li>
+                        
+                        </ul>
+                    
+                    </li>
+                    
+                </ul>
+            
+            </nav>
+            
+            <ul class="right">
+            
+                <li>Copyright &copy; 2015 <span class="divider">&middot;</span> <a href="/index.html">Student Mapping at Right track</a></li>
+                <li><div class="fb-like" data-href="https://www.facebook.com/envato" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div></li>
+            
+            </ul>
+
+            <div class="clear">
+            </div>
+        
+        </div>
+    
+    </footer>
+
+    <!--
+    facebook SDK
+    -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script src="assets/libs/jquery.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="assets/libs/no-ui-slider/jquery.nouislider.all.min.js"></script>
+    <script src="assets/libs/smoothscroll.js"></script>
+    <script src="assets/libs/parallax.js"></script>
+    <script src="assets/js/functions.js"></script>
+
+</body>
+</html>
